@@ -83,7 +83,7 @@ jobs:
           yum install -y git cmake libstdc++-static openssl-devel libmicrohttpd-devel libuv-devel glibc-static libuv-static
       - name: Checkout code
         run: |
-          git clone https://github.com/MoneroOcean/xmrig-proxy.git .
+          git clone https://github.com/Liberty-Pool/xmrig-proxy.git .
           git checkout ${GITHUB_REF:10}
       - name: Build project on CentOS 7
         run: |
