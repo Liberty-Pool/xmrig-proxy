@@ -23,25 +23,12 @@
 
 
 #include "base/tools/String.h"
-<<<<<<< HEAD
-=======
 #include "base/crypto/Coin.h"
->>>>>>> cad514059b9e0abad883b1885d502750c40d1100
 
 
 namespace xmrig {
 
 
-<<<<<<< HEAD
-struct WalletAddress
-{
-    uint64_t tag;
-    uint8_t public_spend_key[32];
-    uint8_t public_view_key[32];
-    uint8_t checksum[4];
-
-    bool Decode(const String& address);
-=======
 class WalletAddress
 {
 public:
@@ -108,7 +95,6 @@ private:
     uint8_t m_checksum[4]{};
     uint8_t m_publicSpendKey[kKeySize]{};
     uint8_t m_publicViewKey[kKeySize]{};
->>>>>>> cad514059b9e0abad883b1885d502750c40d1100
 };
 
 

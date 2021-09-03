@@ -181,11 +181,7 @@ void xmrig::Miner::setJob(Job &job, int64_t extra_nonce)
         blob = tmp_blob;
     }
 
-<<<<<<< HEAD
-    sendJob(blob, job.id().data(), customDiff ? m_sendBuf : job.rawTarget(), job.algorithm().shortName(), job.height(), job.rawSeedHash(), m_signatureData);
-=======
     sendJob(blob, job.id().data(), customDiff ? m_sendBuf : job.rawTarget(), job.algorithm().name(), job.height(), job.rawSeedHash(), m_signatureData);
->>>>>>> cad514059b9e0abad883b1885d502750c40d1100
 }
 
 
